@@ -29,7 +29,7 @@ class Register extends React.Component {
     h_field_update = e => this.setState({[e.target.name]: e.target.value})
     render = () =>
         <Wrapper className='register'>
-            <h1>Login</h1>
+            <h1>Register</h1>
             <input
                 type='text'
                 name='username'
@@ -42,7 +42,7 @@ class Register extends React.Component {
                 placeholder='Password'
                 onChange={this.h_field_update}
                 value={this.state.password}/>
-            <button onClick={this.h_submit}>Login</button>
+            <button onClick={this.h_submit}>Register</button>
         </Wrapper>
 }
 

@@ -20,6 +20,7 @@ class Login extends React.Component {
                 password: this.state.password
             }
             const res = await api.post('/login', payload)
+            console.log(res)
             localStorage.setItem('token', res.data.token)
             this.props.history.push('/jokes')
         } catch (err) {
